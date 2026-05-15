@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ugur Aliosmanoglu | Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Ugur Aliosmanoglu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+          <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header text-center">
+    <div class="container">
+      <h1>Login</h1>
+      <p>Öğrenci numarası ve mail adresi ile giriş kontrolü</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="login-container shadow">
+      <form action="login.php" method="post" onsubmit="return loginKontrol()" novalidate>
+        <div class="mb-3">
+          <label for="kullaniciAdi" class="form-label">Kullanıcı Adı</label>
+          <input type="text" class="form-control" id="kullaniciAdi" name="kullaniciAdi" placeholder="b211210571@sakarya.edu.tr">
+        </div>
+
+        <div class="mb-3">
+          <label for="sifre" class="form-label">Şifre</label>
+          <input type="password" class="form-control" id="sifre" name="sifre" placeholder="b211210571">
+        </div>
+
+        <div id="loginHata" class="alert alert-danger d-none"></div>
+
+        <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+      </form>
+
+      <div class="alert alert-info mt-3 mb-0">
+        <strong>Test bilgileri:</strong><br>
+        Kullanıcı adı: b211210571@sakarya.edu.tr<br>
+        Şifre: b211210571
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2026 Ugur Aliosmanoglu | B211210571</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
