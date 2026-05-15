@@ -18,7 +18,3 @@ Kullanıcı adı: b211210571@sakarya.edu.tr
 HTML sayfaları tarayıcıda açılabilir. Ancak PHP dosyalarının çalışması için XAMPP, WAMP, Laragon veya bir hosting kullanılmalıdır.
 Örneğin XAMPP kullanıyorsan bu klasörü htdocs içine koyup http://localhost/ugur_web_odevi_hazir/index.html adresinden açabilirsin.
 
-Teslim Öncesi Hatırlatma:
-- GitHub reposuna farklı günlerde en az 10 push yapılması isteniyor.
-- Canlı hosting linki alınmalı.
-- Rapor için her sayfanın ekran görüntüsü ve kısa açıklaması eklenmeli.
